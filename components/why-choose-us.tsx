@@ -47,7 +47,7 @@ export function WhyChooseUsSection() {
   ]
 
   const stats = [
-    { number: '500+', label: 'Projects Completed', icon: TrendingUp },
+    { number: '50+', label: 'Projects Completed', icon: TrendingUp },
     { number: '98%', label: 'Client Satisfaction', icon: Award },
     { number: '24/7', label: 'Support Available', icon: Shield },
   ]
