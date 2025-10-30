@@ -25,12 +25,13 @@ export function HeroSection() {
         backgroundBlendMode: 'overlay',
       }}
     >
-      <div className="absolute inset-0 overflow-hidden">
+      {/* New floating particles */}
+      {/*  <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-20 left-10 w-72 h-72 bg-gradient-to-r from-primary/20 to-accent/15 rounded-full blur-3xl animate-pulse"></div>
         <div className="absolute bottom-20 right-10 w-96 h-96 bg-gradient-to-r from-secondary/15 to-primary/20 rounded-full blur-3xl animate-pulse delay-1000"></div>
         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-gradient-to-r from-primary/10 via-secondary/10 to-accent/10 rounded-full blur-3xl animate-spin-slow"></div>
 
-        {/* New floating particles */}
+        
         <div className="absolute inset-0">
           {[...Array(20)].map((_, i) => (
             <div
@@ -45,7 +46,7 @@ export function HeroSection() {
             />
           ))}
         </div>
-      </div>
+      </div> */}
 
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute top-1/4 left-1/4 animate-float">
@@ -58,16 +59,16 @@ export function HeroSection() {
             <Wind className="w-10 h-10 text-secondary" />
           </div>
         </div>
-        <div className="absolute bottom-1/3 left-1/3 animate-float-slow">
+        {/* <div className="absolute bottom-1/3 left-1/3 animate-float-slow">
           <div className="w-14 h-14 glass-morphism rounded-2xl flex items-center justify-center transform rotate-45 hover:rotate-0 transition-all duration-500">
             <Battery className="w-7 h-7 text-accent" />
           </div>
-        </div>
-        <div className="absolute top-1/2 right-1/3 animate-float-gentle">
+        </div> */}
+        {/*  <div className="absolute top-1/2 right-1/3 animate-float-gentle">
           <div className="w-18 h-18 glass-morphism rounded-2xl flex items-center justify-center transform -rotate-6 hover:rotate-0 transition-all duration-500">
             <Globe className="w-9 h-9 text-primary" />
           </div>
-        </div>
+        </div> */}
         <div className="absolute bottom-1/4 right-1/4 animate-float">
           <div className="w-12 h-12 glass-morphism rounded-2xl flex items-center justify-center transform rotate-30 hover:rotate-0 transition-all duration-500">
             <Leaf className="w-6 h-6 text-secondary" />
@@ -79,7 +80,7 @@ export function HeroSection() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center">
           <div className="mb-8">
-            <div className="inline-flex items-center px-6 py-3 glass-morphism rounded-full border border-primary/30 mb-8 animate-shimmer">
+            <div className="inline-flex items-center px-6 py-3 glass-morphism rounded-full border border-primary/30 animate-shimmer mt-20 bg-amber-700 ">
               <Zap className="w-5 h-5 text-primary mr-3 animate-pulse" />
               <span className="text-sm font-semibold text-primary dark:text-primary-foreground">
                 🌱 Sustainable Energy Solutions
@@ -94,10 +95,10 @@ export function HeroSection() {
               <span className="text-foreground drop-shadow-lg">Today.</span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-muted-foreground mb-10 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl dark:text-white text-white/70 mb-10 max-w-4xl mx-auto leading-relaxed">
               Transform your energy future with our cutting-edge solar
               solutions.
-              <span className="text-primary font-semibold bg-primary/10 px-2 py-1 rounded-lg mx-1">
+              <span className="dark:text-[#07ab43] text-green-500 font-semibold dark:bg-green-900/40 bg-green-900/40 px-2 py-1 rounded-lg mx-1">
                 Affordable, reliable, and sustainable
               </span>
               power for businesses, communities, and homes.
@@ -118,7 +119,7 @@ export function HeroSection() {
               <Button
                 variant="outline"
                 size="lg"
-                className="glass-morphism border-primary/50 text-primary dark:text-primary hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary text-lg px-10 py-7 rounded-2xl font-bold shadow-lg transform hover:scale-105 transition-all duration-300 group bg-transparent"
+                className="glass-morphism border-primary/50 dark:text-green-600 text-[#059a4d] hover:bg-primary/10 dark:hover:bg-primary/20 hover:border-primary text-lg px-10 py-7 rounded-2xl font-bold shadow-lg transform hover:scale-105 transition-all duration-300 group bg-transparent"
               >
                 <Phone className="mr-3 h-5 w-5 group-hover:animate-pulse" />
                 (+234) 805-5013-107
@@ -128,8 +129,8 @@ export function HeroSection() {
 
           <a href="mailto:swhavycollectivetech@gmail.com">
             <div className="items-center justify-center gap-3 glass-morphism rounded-full px-6 py-3 inline-flex">
-              <Mail className="h-6 w-6 text-primary animate-pulse" />
-              <span className="text-lg font-medium text-foreground">
+              <Mail className="h-6 w-6 dark:text-green-600 text-green-800 animate-pulse" />
+              <span className="text-lg font-medium dark:text-white text-white/70">
                 swhavycollectivetech@gmail.com
               </span>
             </div>
